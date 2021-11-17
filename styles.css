@@ -1,11 +1,21 @@
 body {
     background-color: bisque;
-    font-family: "Lato";
+    font-family: "Helvetica";
 }
-div {
-    border: 2px solid rgb(179, 137, 59);
+#content {
+    border: 2px solid rgb(163, 149, 122);
 }
-#switchMode {
+header {
+    display: flex;
+    align-content: space-between;
+}
+
+#content > div {
+    margin: 10px;
+    padding-left: 10px;
+    border-left: 4px solid rgb(163, 149, 122);
+}
+button {
     background-color: bisque;
     padding: 10px 12px 10px 12px;
     border-radius: 12px;

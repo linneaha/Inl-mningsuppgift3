@@ -10,29 +10,90 @@
 <body>
     <h1></h1>
     <div id="content">
-        <button id="switchMode">Dark Mode</button>
+        <header>
+            <div>
         <h1>Quiz-time!</h1>
+    </div>
+    <div>
+        <button id="switchMode">Dark Mode</button>
+    </div>
+    </header>
         <div id="question1">
-            <h2>Fråga 1</h2>
+            <h2>Question 1</h2>
+            <p>Bananas are curved because they grow upwards towards the sun</p>
+            <input type="radio" name="question1" id="radio1" value="true">
+            <label for="radio1">True</label>
+            <input type="radio" name="question1" id="radio2" value="false">
+            <label for="radio2">False</label>
         </div>
         <div id="question2">
-            <h2>Fråga 2</h2>
+            <h2>Question 2</h2>
+            <p>What is the largest muscle in the human body?</p>
+            <input type="radio" name="question2" id="radio3" value="">
+            <label for="radio3">The gluteus maximus</label>
+            <input type="radio" name="question2" id="radio4" value="">
+            <label for="radio5">Sartorius</label>
+            <input type="radio" name="question2" id="radio5" value="">
+            <label for="radio5">Biceps brachii</label>
         </div>
         <div id="question3">
-            <h2>Fråga 3</h2>
+            <h2>Question 3</h2>
+            <p>Idina Menzel sings 'let it go' 20 times in 'Let It Go' from Frozen
+            </p>
+            <input type="radio" name="question3" id="radio6" value="true">
+            <label for="radio6">True</label>
+            <input type="radio" name="question3" id="radio7" value="false">
+            <label for="radio7">False</label>
         </div>
         <div id="question4">
-            <h2>Fråga 4</h2>
+            <h2>Question 4</h2>
+            <p>Which bird has eyes that are larger than its brain?</p>
+            <input type="radio" name="question4" id="radio8" value="">
+            <label for="radio8">Hummingbird</label>
+            <input type="radio" name="question4" id="radio9" value="">
+            <label for="radio9">Chicken</label>
+            <input type="radio" name="question4" id="radio10" value="">
+            <label for="radio10">Ostrich</label>
         </div>
         <div id="question5">
-            <h2>Fråga 5</h2>
+            <h2>Question 5</h2>
+            <p>A stroopwafel is a wafer cookie that originated in which European country?</p>
+            <input type="radio" name="question5" id="radio11" value="">
+            <label for="radio11">Belgium</label>
+            <input type="radio" name="question5" id="radio12" value="">
+            <label for="radio12">Netherlands</label>
+            <input type="radio" name="question5" id="radio13" value="">
+            <label for="radio13">Germany</label>
         </div>
         <div id="question6">
-            <h2>Fråga 6</h2>
+            <h2>Question 6</h2>
+            <p>Spaghetto is the singular word for a piece of spaghetti</p>
+            <input type="radio" name="question6" id="radio14" value="true">
+            <label for="radio14">True</label>
+            <input type="radio" name="question6" id="radio15" value="false">
+            <label for="radio15">False</label>
         </div>
         <div id="question7">
-            <h2>Fråga 7</h2>
+            <h2>Question 7</h2>
+            <p>Which movies have won more than 10 Academy Awards?</p>
+            <div>
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">Titanic</label>
         </div>
+        <div>
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">LOTR: The Return of the King</label>
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox3">
+            <label for="checkbox3">Ben-Hur</label>
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox4">
+            <label for="checkbox4">Gone with the Wind</label>
+        </div>
+        </div>
+        <button id="getResult">Get results!</button>
     </div>
     <script src="main.js"></script>
 </body>
