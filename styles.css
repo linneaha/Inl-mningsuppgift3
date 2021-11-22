@@ -4,14 +4,19 @@ body {
 }
 #content {
     border: 2px solid rgb(163, 149, 122);
+    padding: 20px;
 }
 header {
     display: flex;
     align-content: space-between;
 }
+h1 {
+    font-family: "Rockwell";
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 #content > div {
-    margin: 10px;
     padding-left: 10px;
     border-left: 4px solid rgb(163, 149, 122);
 }
@@ -19,4 +24,14 @@ button {
     background-color: bisque;
     padding: 10px 12px 10px 12px;
     border-radius: 12px;
+}
+#getResult {
+    text-align: center;
+}
+#question7 > div {
+    margin: 5px;
+}
+
+footer {
+    margin-top: 5px;
 }
