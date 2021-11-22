@@ -23,40 +23,34 @@ switchMode.addEventListener("click", () => {
     }
  })
 
-
 // quiz-funktionalitet & visa resultat
-let displayResult = document.querySelector("#content"); 
-let questions = document.querySelectorAll("[name = 'question1'], [name = 'question2'], [name = 'question3'], [name = 'question4'], [name = 'question5'], [name = 'question6']")
-let question7 = document.querySelectorAll("[name = 'question7']")
-
-let points = 0;
-let checkboxChecked = [];
+let displayResult = document.querySelector(".showResult"); 
+let questions = document.querySelectorAll("[name = 'question1'], [name = 'question2'], [name = 'question3'], [name = 'question4'], [name = 'question5'], [name = 'question6']");
+let alt1 = document.querySelector("#checkbox1")
+let alt2 = document.querySelector("#checkbox2")
+let alt3 = document.querySelector("#checkbox3")
+let wrongAnswer = document.querySelector("#checkbox4")
 
 getResult.addEventListener("click", () => {
-
+    let points = 0;
     questions.forEach (btn => {
         if (btn.checked && btn.value === "correct") {
-        points++
+        points++;
     }
     })
 
-    question7.forEach(btn => {
-        if (btn.checked && btn.value === "correct") {
-            checkboxChecked.push(btn)
-            if (checkboxChecked.length === 3) {
-                points++
-            }
-        } 
-    });
-
+    if (alt1.checked && alt2.checked && alt3.checked && wrongAnswer.checked === false) {
+        points++;
+    }
+        
     if (points === 7) {
-        displayResult.innerHTML = `Dina poäng: ${points}`;
-        displayResult.style.color = "green"
+        displayResult.innerHTML = `Amount of correct answers: ${points}`;
+        displayResult.style.color = "green";
     } else if (points >= 4) {
-        displayResult.innerHTML = `Dina poäng: ${points}`;
-        displayResult.style.color = "yellow"
+        displayResult.innerHTML = `Amount of correct answers: ${points}`;
+        displayResult.style.color = "orange";
     } else {
-        displayResult.innerHTML = `Dina poäng: ${points}`;
-        displayResult.style.color = "red"
+        displayResult.innerHTML = `Amount of correct answers: ${points}`;
+        displayResult.style.color = "red";
     }
 });

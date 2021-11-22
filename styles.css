@@ -15,8 +15,7 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
 }
-
-#content > div {
+#content > div:not(.showResult) {
     padding-left: 10px;
     border-left: 4px solid rgb(163, 149, 122);
 }
@@ -31,7 +30,6 @@ button {
 #question7 > div {
     margin: 5px;
 }
-
 footer {
     margin-top: 5px;
 }
