@@ -1,4 +1,4 @@
-# Inlamningsuppgift3-QUIZ(G)
+# Inlämningsuppgift3-QUIZ(G)
 
 ## Vanilla JS quiz
 
