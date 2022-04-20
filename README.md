@@ -1,10 +1,10 @@
 # Inlamningsuppgift3-QUIZ
 
-##Vanilla JS quiz
+## Vanilla JS quiz
 
 Beskrivning: Du har fått i uppgift att skapa ett quiz med 7 frågor. Användare ska kunna svara på frågor och få feedback på huruvida hen besvarat dessa rätt eller fel i slutet av quizet.
  
-###Kravsättning
+### Kravsättning
 
 * Quizet ska innehålla 7 frågor.
 * Användaren ska utöver att besvara frågor för quizet, även kunna byta utseende på sidan mellan dark mode (dvs mörk bakgrundsfärg med ljus text ) och light mode (ljus bakgrundsfärg med mörk text).
